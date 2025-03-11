@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emailus</title>
+    <link rel="stylesheet" href="mail.css" >
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "YOUR_PUBLIC_KEY",
+    });
+    })();
+    </script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+
+        
+<section>
+    <section id="up"></section>
+    <section id="down"></section>
+    <section id="left"></section>
+    <section id="right"></section>
+</section>
+
+
+
+    
+<div id="mail"><br>
+        <p class="connect">Connect Us</p>
+    <form action="">
+        <p>Name&nbsp;<input type="name" value="" id="name" required></p>
+        <p>Email&nbsp;<input type="email" value="" id="email" required></p>
+        <center><p><button value="Submit" id="submit" onclick="sendMail()">Submit</button></p></center>
+        
+    </form>
+</div>
+
+</body>
+</html>
